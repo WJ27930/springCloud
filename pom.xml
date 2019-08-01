@@ -9,7 +9,13 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.1.RELEASE</version>
 	</parent>
-	<!-- 管理依赖 -->
+  <modules>
+  	<module>springCloud-api-service</module>
+  	<module>springCloud-api-member-service-impl</module>
+  	<module>springCloud-api-order-service-impl</module>
+  </modules>
+  
+  <!-- 管理依赖 -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -54,10 +60,4 @@
 			</snapshots>
 		</repository>
 	</repositories>
-  
-  <modules>
-  	<module>springCloud-api-service</module>
-  	<module>springCloud-api-member-service-impl</module>
-  	<module>springCloud-api-order-service-impl</module>
-  </modules>
 </project>
